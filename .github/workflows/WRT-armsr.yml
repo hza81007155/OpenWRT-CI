@@ -2,7 +2,7 @@
 # Copyright (C) 2026 VIKINGYFY
 
 #CI项目
-name: WRT-TEST
+name: WRT-armsr
 
 #CI计划
 on:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       CONFIG:
-        default: 'MEDIATEK-WIFI-YES'
+        default: 'armsr'
         required: true
         type: choice
         options:
@@ -22,7 +22,7 @@ on:
           - MEDIATEK-WIFI-NO
           - ROCKCHIP
           - X86
-          - TEST
+          - armsr
       SOURCE:
         default: 'VIKINGYFY/immortalwrt'
         required: true
